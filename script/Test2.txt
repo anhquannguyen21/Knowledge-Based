@@ -1,0 +1,61 @@
+
+/*Cau 1: Tinh Quang Nam co thuoc nuoc Viet Nam khong?*/
+tinh_thuoc_nuoc('Quang Nam', 'Viet Nam').
+
+/*Cau 2: Cho biet que quan cua ong Nguyen Xuan Phuc?*/
+que_quan('Nguyen Xuan Phuc',X).
+ 
+/*Cau 3: Ong Nguyen Van Phuoc la chu tich tinh Quang Nam dung hay sai?*/
+chu_tich_tinh('Nguyen Van Phuoc', 'Quang Nam').
+
+/*Cau 4: Thon Tang Long co thuoc huyen Hoai Nhon khong?*/
+thon_thuoc_huyen('Tang Long', 'Hoai Nhon').
+
+/*Cau 5: Cho biet ngay sinh cua ong Ho Quang Hieu?*/
+ngay_sinh('Ho Quang Hieu', X).
+
+/*Cau 6: Ong Tran Dinh Long la chu tich cua huyen nao?*/
+chu_tich_huyen('Tran Dinh Long', X).
+
+/*Cau 7: Tien luong cua ong Bui Tien Dung la bao nhieu?*/
+luong('Bui Tien Dung', X), write(X).
+
+/*Cau 8: Dia chi hien tai cua ba Vo Thi An?*/
+dia_chi('Vo Thi An', X).
+
+/*Cau 9: Liet ke cac bo cua Viet Nam?*/
+bo_thuoc_nuoc(X,'Viet Nam').
+
+/*Cau 10: Ong Le Van Quoc la truong thon Phu Nam dung khong?*/
+truong_thon('Le Van Quoc','Phu Nam').
+
+/*Cau 11: Liet ke cac xa cua huyen Phu Ninh?*/
+xa_thuoc_huyen(X, 'Phu Ninh').
+
+/*Cau 12: Ong Le Van Xuan va ba Vo Thien Kim co cung que khong?*/
+cung_que('Le Van Kim', 'Le Van Xuan').
+
+/*Cau 13: Ong Tran Dinh Long co phai la chu tich xa Binh An khong?')*/
+chu_tich_xa('Tran Dinh Long', 'Binh An').
+
+/*Cau 14: Liet ke danh sach cac hoi.*/
+hoi(X).
+
+/*Cau 15: Tien Luong cua Bui Tien Dung va Bich Phuong bang nhau dung hay sai?*/
+tien_luong_bang_nhau('Bui Tien Dung','Bich Phuong').
+Cau 16: Ai la tong bi thu?
+tong_bi_thu(X).
+
+/*Cau 17: Ai la pho chu tich xa Tam Phuoc?*/
+phoCT_xa(X, 'Tam Phuoc').
+
+/*Cau 18: Chu tich cac cap cua huyen Phu Cat?*/
+chutich_cac_cap_huyen(X, 'Phu Cat').
+
+/*Cau 19: Liet ke danh sach khen thuong.*/
+khen_thuong(X).
+
+/*Cau 20: Liet ke danh sach ky luat.*/
+ky_luat(X).
+
+

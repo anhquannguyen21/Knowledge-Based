@@ -1,0 +1,77 @@
+/* Query 1 */
+X=princeHarry
+/* Query 2 */
+True
+/* Query 3 */
+True
+/* Query 4 */
+True
+/* Query 5 */
+X=queenElizabethII
+/* Query 6 */
+X=princessAnnePrincessRoyal
+/* Query 7 */
+False
+/* Query 8 */
+False
+/* Query 9 */
+False
+/* Query 10 */
+True
+/* Query 11 */
+False
+/* Query 12 */
+X=princeCharles
+X=princeAndrew
+/* Query 13 */
+X=kateMiddleton
+/* Query 14 */
+True
+/* Query 15 */
+True
+/* Query 16 */
+True
+/* Query 17 */
+X=princeCharles
+/* Query 18 */
+True
+/* Query 19 */
+X=princessEugenieofYork
+X=princessBeatriceofYork
+X=zaraTindall
+X=ladyLouiseWindsor
+/* Query 20 */
+X=camillaParkerBowles
+/* Query 21 */
+X=princessCharlotteofCambridge
+X=princeLouis
+X=archieHarrison
+X=princeGeorge
+/* Query 22 */
+X=princePhilip
+X=princeCharles
+X=princeAndrew
+X=princeWilliam
+X=princeHarry
+X=timothyLaurence
+X=princeEdward
+X=peterPhillips
+X=mikeTindall
+/* Query 23 */
+True
+/* Query 24 */
+X=princePhilip
+X=princeCharles
+/* Query 25 */
+X=princePhilip, Y=princessEugenieofYork
+X=princePhilip, Y=princessBeatriceofYork
+X=princePhilip, Y=zaraTindall
+X=princePhilip, Y=ladyLouiseWindsor
+X=princePhilip, Y=princeWilliam
+X=princePhilip, Y=princeHarry
+X=princePhilip, Y=peterPhillips
+X=princePhilip, Y=james
+X=princeCharles, Y=princessCharlotteofCambridge
+X=princeCharles, Y=princeLouis
+X=princeCharles, Y=archieHarrison
+X=princeCharles, Y=princeGeorge

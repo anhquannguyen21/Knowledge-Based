@@ -1,0 +1,87 @@
+1. Ai là cha của Archie Harrison?
+/* father(X,archieHarrison). */
+
+2. Prince Charles có phải là ông của Archie Harrison không?
+/*grandfather(princeCharles,archieHarrison). */
+
+3. Prince William và Prince Harry có phải là hai anh em không?
+/* brother(princeWilliam,princeHarry). */
+
+4. Ai là mẹ của Prince Andrew?
+/* mother(X,princeAndrew). */
+
+5. Ai là chị gái của Prince Edward?
+/* sister(X, princeEdward). */
+
+6. Prince Harry có phải là bác của James không?
+/* uncle(princeHarry,james). */
+
+7. Nữ hoàng Elizabeth có phải là vợ của Timothy Laurence không?
+/* wife(queenElizabethII,timothyLaurence). */
+
+8. Ai là cô của Lady Louise Windsor?
+/* aunt(X, ladyLouiseWindsor). */
+
+9. Mark Phillips có phải là cha của Prince George không?
+/* father(markPhillips, princeGeorge). */
+
+10. Peter Phillips có phải là cháu trai (nephew) của Prince Edward không?
+/* nephew(peterPhillips,princeEdward). */
+
+11. Zara Tindall có phải là cháu gái (niece) của Meghan Markle không?
+/* niece(zaraTindall,meghanMarkle). */
+
+12. Ai là bác của Zara Tindall?
+/* uncle(X, zaraTindall). */
+
+13. Prince Philip có phải là cha của Prince Charles không?
+/* father(princePhilip, princeCharles). */
+
+14. Ai là anh trai của Prince Edward?
+/* brother(X,princeEdward). */
+
+15. Ai là vợ của Prince William?
+/* wife(X,princeWilliam). */
+
+16. Prince Charles đã ly hôn với Diana chưa?
+/* divorced(princeCharles, diana). */
+
+17. Nữ hoàng Elizabeth có phải là bà của Prince Harry không?
+/* grandmother(queenElizabethII,princeHarry). */
+
+18. Princess Eugenie có phải là cháu(grandchild) của Prince Philip không?
+/* grandchild(princessEugenieofYork, princePhilip).
+
+19. Ai là ông của Princess Charlotte?
+/* grandfather(X,princessCharlotteofCambridge).
+
+20. Prince Louis có phải là cháu trai(grandson)của Diana không?
+/* grandson(princeLouis,diana). */
+
+21. Ai là cháu gái (granddaughter) của nữ hoàng Elizabeth?
+/* granddaughter(X,queenElizabethII). */
+
+22. Ai là vợ hiện tại của Prince Charles? 
+/* wife(X,princeCharles).
+
+23. Ai là chồng của Kate Middleton?
+/* husband(X, kateMiddleton). */
+
+24. Ai là cháu của Diana?
+/* grandchild(X,diana). */
+
+25. Liệt kê các cặp vợ chồng.
+/* husband(X,Y). */
+
+26. Liệt kê các cặp cô cháu.
+*/ aunt(X,Y). */
+ 
+27. Liệt kê các cặp ông cháu.
+*/ grandfather(X,Y). */
+
+
+
+
+
+
+ 

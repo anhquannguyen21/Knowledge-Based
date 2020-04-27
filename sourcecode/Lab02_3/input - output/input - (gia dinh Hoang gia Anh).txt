@@ -1,0 +1,134 @@
+/* Facts */
+female(queenElizabethII).
+female(diana).
+female(camillaParkerBowles).
+female(sarahFerguson).
+female(kateMiddleton).
+female(meghanMarkle).
+female(princessEugenieofYork).
+female(princessBeatriceofYork).
+female(princessCharlotteofCambridge).
+female(princessAnnePrincessRoyal).
+female(sophieRhysJones).
+female(autumnPhillips).
+female(zaraTindall).
+female(ladyLouiseWindsor).
+
+male(princePhilip).
+male(princeCharles).
+male(princeAndrew).
+male(princeWilliam).
+male(princeHarry).
+male(princeLouis).
+male(archieHarrison).
+male(marksPhillips).
+male(timothyLaurence).
+male(princeEdward).
+male(peterPhillips).
+male(mikeTindall).
+male(princeGeorge).
+male(james).
+
+parent(queenElizabethII,princeCharles).
+parent(queenElizabethII,princeAndrew).
+parent(queenElizabethII,princessAnnePrincessRoyal).
+parent(queenElizabethII,princeEdward).
+parent(princePhilip,princeCharles).
+parent(princePhilip,princeAndrew).
+parent(princePhilip,princessAnnePrincessRoyal).
+parent(princePhilip,princeEdward).
+parent(diana,princeWilliam).
+parent(diana,princeHarry).
+parent(princeCharles,princeWilliam).
+parent(princeCharles,princeHarry).
+parent(princeAndrew,princessEugenieofYork).
+parent(princeAndrew,princessBeatriceofYork).
+parent(sarahFerguson,princessEugenieofYork).
+parent(sarahFerguson,princessBeatriceofYork).
+parent(kateMiddleton,princeGeorge).
+parent(kateMiddleton,princessCharlotteofCambridge).
+parent(kateMiddleton,princeLouis).
+parent(princeWilliam,princeGeorge).
+parent(princeWilliam,princessCharlotteofCambridge).
+parent(princeWilliam,princeLouis).
+parent(princeHarry,archieHarrison).
+parent(meghanMarkle,archieHarrison).
+parent(marksPhillips,peterPhillips).
+parent(princessAnnePrincessRoyal,peterPhillips).
+parent(marksPhillips,zaraTindall).
+parent(princessAnnePrincessRoyal,zaraTindall).
+parent(princeEdward,ladyLouiseWindsor).
+parent(princeEdward,james).
+parent(sophieRhysJones,ladyLouiseWindsor).
+parent(sophieRhysJones,james).
+
+married(princePhilip,queenElizabethII).
+married(queenElizabethII,princePhilip).
+married(princeAndrew,sarahFerguson).
+married(sarahFerguson,princeAndrew).
+married(princeWilliam,kateMiddleton).
+married(kateMiddleton,princeWilliam).
+married(princeHarry,meghanMarkle).
+married(meghanMarkle,princeHarry).
+married(princeEdward,sophieRhysJones).
+married(sophieRhysJones,princeEdward).
+married(peterPhillips,autumnPhillips).
+married(autumnPhillips,peterPhillips).
+married(mikeTindall,zaraTindall).
+married(zaraTindall, mikeTindall).
+married(timothyLaurence,princessAnnePrincessRoyal).
+married(princessAnnePrincessRoyal,timothyLaurence).
+married(princeCharles,camillaParkerBowles).
+married(camillaParkerBowles,princeCharles).
+divorced(princeCharles,diana).
+divorced(diana,princeCharles).
+divorced(marksPhillips,princessAnnePrincessRoyal).
+divorced(princessAnnePrincessRoyal,marksPhillips).
+/* Rules */
+husband(X,Y):- male(X),married(X,Y), X\=Y.
+wife(X,Y):- female(X), married(X,Y), X\=Y.
+father(X,Y) :- parent(X,Y), male(X), X\=Y.
+mother(X,Y) :- parent(X,Y), female(X), X\=Y.
+child(X,Y) :- (father(Y,X); mother(Y,X)), X\=Y.
+son(X,Y) :- child(X,Y), male(X), X\=Y.
+daughter(X,Y) :- child(X,Y), female(X), X\=Y.
+grandparent(X,Y):- ((mother(X,P), mother(P,Y));(mother(X,P), father(P,Y));
+(father(X,P), father(P,Y)); (father(X,P),mother(P,Y))), X\=Y.
+grandfather(X,Y) :- ((father(X,M), father(M,Y)); (father(X,F), mother(F,Y))), X\=Y.
+grandmother(X,Y):- (mother(X,M), mother(M,Y)); (mother(X,F),father(F,Y)), X\=Y.
+grandchild(X,Y):- (child(X,P), mother(Y,P));(child(X,P), father(Y,P)),X\=Y.
+grandson(X,Y) :- (son(X,P), father(Y,P));(son(X,P), mother(Y,P)),X\=Y.
+granddaughter(X,Y) :- (daughter(X,P), father(Y,P));(daughter(X,P), mother(Y,P)),X\=Y.
+sibling(X,Y) :- father(F,X), father(F,Y), mother(M,X), mother(M,Y), X\=Y.
+brother(X,Y) :- male(X), sibling(X,Y),X\=Y.
+sister(X,Y) :- female(X), sibling(X,Y),X\=Y.
+uncle(X,Y) :- male(X), ((sibling(X,F), father(F,Y)); (sibling(X,M), mother(M,Y))), X\=Y.
+aunt(X,Y) :- female(X), ((sibling(X,P), father(P,Y)); (sibling(X,P), mother(P,Y))), X\=Y.
+niece(X,Y) :- daughter(X,P), sibling(P,Y),X\=Y.
+nephew(X,Y) :- son(X,P), sibling(P,Y),X\=Y.
+/* Queries */
+?- father(X,archieHarrison).
+?- grandfather(princeCharles,archieHarrison).
+?- wife(queenElizabethII,_).
+?- brother(princeWilliam,princeHarry).
+?- mother(X,princeAndrew).
+?- sister(X, princeEdward).
+?- uncle(princeHarry,james).
+?- aunt(queenElizabethII, ladyLouiseWindsor).
+?- father(markPhillips, princeGeorge).
+?- nephew(peterPhillips,princeEdward).
+?- niece(zaraTindall,meghanMarkle).
+?- brother(X,princeEdward).
+?- wife(X,princeWilliam).
+?- divorced(princeCharles, diana).
+?- grandmother(queenElizabethII,princeHarry).
+?- grandchild(princessEugenieofYork, princePhilip).
+?- grandfather(X,princessCharlotteofCambridge).
+?- grandson(princeLouis,diana).
+?- granddaughter(X,queenElizabethII).
+?- wife(X,princeCharles).
+?- grandchild(X,diana).
+?- husband(X,_).
+?- male(_).
+?- grandfather(X, _).
+?- grandfather(X,Y).

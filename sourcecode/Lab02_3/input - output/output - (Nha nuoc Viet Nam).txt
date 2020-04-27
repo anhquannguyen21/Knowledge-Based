@@ -1,0 +1,69 @@
+/* Query 1 */
+True
+/* Query 2 */
+X='Quang Nam'
+X='Quang Ngai'
+/* Query 3 */
+X='Quang Nam'
+/* Query 4 */
+True
+/* Query 5 */
+X='Nguyen Van Phuoc'
+X='Nguyen Van B'
+X='Nguyen Van C'
+/* Query 6 */
+True
+/* Query 7 */
+X=1975
+/* Query 8 */
+X='Phu Ninh'
+/* Query 9 */
+X=600000
+/* Query 10 */
+X='5 Thanh Thai, Q.10, HCM'
+/* Query 11 */
+X='KHCN'
+X='Chinh tri'
+X='Van hoa'
+X='Giao thong'
+/* Query 12 */
+True
+/* Query 13 */
+X='Tam Phuoc'
+X='Tam Dan'
+X='Tam An'
+X='Tam Dai'
+X='Tam Lanh'
+X='Tam Loc'
+X='Tam Thanh'
+/* Query 14 */
+False
+/* Query 15 */
+True
+/* Query 16 */
+False
+/* Query 17 */
+X='Tin Hoc Viet Nam'
+X='Toan Hoc Viet Nam'
+X='Phu Nu'
+X='Cuu chien binh'
+/* Query 18 */
+False
+/* Query 19 */
+True
+/* Query 20 */
+False
+/* Query 21 */
+X='Nguyen Phu Trong'
+/* Query 22 */
+X='Nguyen Ha A', Y='Tam Phuoc'
+X='Tran Dinh Xuan', Y='Tam Dan'
+X='Bui Van C', Y='Tam Dan'
+/* Query 23 */
+X='Le Hoai Bac'
+X='Bui Tien Dung'
+/* Query 24 */
+True
+/* Query 25 */
+X='Nguyen Van C'
+X='Ha Van E'
